@@ -4,9 +4,11 @@ using Sitecore.EmailCampaign.Model.Dispatch;
 using Sitecore.EmailCampaign.Model.Web;
 using Sitecore.ExM.Framework.Diagnostics;
 using System;
+using Sitecore.EmailCampaign.Cm.Pipelines.DispatchNewsletter;
 
-namespace Sitecore.EmailCampaign.Cm.Pipelines.DispatchNewsletter
+namespace Sitecore.Support.EmailCampaign.Cm.Pipelines.DispatchNewsletter
 {
+  #region Original Code
   public class NotifyDispatchFinished
   {
     private readonly INotificationFactory _notificationFactory;
@@ -23,10 +25,16 @@ namespace Sitecore.EmailCampaign.Cm.Pipelines.DispatchNewsletter
 
     public void Process(DispatchNewsletterArgs args)
     {
-      if (!args.RequireFinalMovement || args.IsTestSend || !args.AllowNotifications || !args.Message.EnableNotifications || args.DispatchInterruptRequest == DispatchInterruptSignal.Pause)
+      #endregion Original Code
+
+      #region Modified code
+      if (args.IsTestSend || !args.Message.EnableNotifications || args.DispatchInterruptRequest == DispatchInterruptSignal.Pause)
       {
         return;
       }
+      #endregion Modified code
+
+      #region Original Code
       try
       {
         string text = args.SendingAborted ? EcmTexts.Localize("Aborted", Array.Empty<object>()) : EcmTexts.Localize("Completed", Array.Empty<object>());
@@ -39,3 +47,4 @@ namespace Sitecore.EmailCampaign.Cm.Pipelines.DispatchNewsletter
     }
   }
 }
+#endregion Original Code

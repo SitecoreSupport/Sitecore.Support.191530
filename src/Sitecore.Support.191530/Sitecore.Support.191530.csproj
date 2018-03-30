@@ -71,7 +71,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.191530.config" />
+    <Content Include="App_Config\Include\Sitecore.Support.191530.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
