@@ -42,19 +42,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Sitecore.EmailCampaign, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.EmailCampaign.9.0.171219\lib\NET462\Sitecore.EmailCampaign.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.EmailCampaign.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.EmailCampaign.Cm, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.EmailCampaign.Cm.9.0.171219\lib\NET462\Sitecore.EmailCampaign.Cm.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.EmailCampaign.Cm.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.EmailCampaign.Model, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.EmailCampaign.Model.9.0.171219\lib\NET462\Sitecore.EmailCampaign.Model.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.EmailCampaign.Model.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.EmailCampaign.Model.Web, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.EmailCampaign.Model.Web.9.0.171219\lib\NET462\Sitecore.EmailCampaign.Model.Web.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.EmailCampaign.Model.Web.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.ExM.Framework, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Sitecore.ExM.Framework.9.0.171219\lib\NET462\Sitecore.ExM.Framework.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\Sitecore.ExM.Framework.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.9.0.1\lib\Sitecore.Kernel.dll</HintPath>
